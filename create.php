@@ -94,20 +94,20 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     <p>Please fill this form and submit to add cars record to the database.</p>
                     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                         <div class="form-group">
-                            <label>model</label>
+                            <label>Model</label>
                             <input type="text" name="model" class="form-control <?php echo (!empty($model_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $model; ?>">
 							
                             <span class="invalid-feedback"><?php echo $model_err;?></span>
                         </div>
 						
                         <div class="form-group">
-                            <label>company</label>
+                            <label>Company</label>
                             <textarea name="company" class="form-control <?php echo (!empty($company_err)) ? 'is-invalid' : ''; ?>"><?php echo $company; ?></textarea>
                             <span class="invalid-feedback"><?php echo $company_err;?></span>
                         </div>
 						
                         <div class="form-group">
-                            <label>color</label>
+                            <label>Color</label>
                             <input type="text" name="color" class="form-control <?php echo (!empty($color_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $color; ?>">
                             <span class="invalid-feedback"><?php echo $color_err;?></span>
                         </div>
